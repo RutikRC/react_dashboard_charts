@@ -8,24 +8,24 @@ import TwoPieChart from './components/TwoPieCharts'
 import ActivePieChart from './components/ActivePieChart'
 import TreeMapWithCustomContent from './components/TreeMapResponsive'
 import ComposedBarChart from './components/ComposedBarChart'
+import CustomAlignedChart from './CustomAlignChart'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
         <div className='flex'>
+          {/* <CustomAlignedChart/> */}
+          <ComposedBarChart />
+          {/* <CustomBarChart /> */}
+          <ActivePieChart />
           <AreaChartWithGradient />
           <SynchronizedAreaCharts />
           {/* <TreeMapWithCustomContent /> */}
-          <ComposedBarChart/>
-          {/* <CustomBarChart /> */}
-          <ActivePieChart />
         </div>
         {/* <TwoPieChart /> */}
         <LineChartWithReference />
-      </div>
     </>
   )
 }
